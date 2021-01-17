@@ -19,10 +19,10 @@ public class Member {
 
     private String name;
 
-    @Embedded
+    @Embedded // jpa의 내장타입
     private Address address;
 
-    @OneToMany(mappedBy = "member")
+    @OneToMany(mappedBy = "member" )
     private List<Order> orders = new ArrayList<>();
 
 

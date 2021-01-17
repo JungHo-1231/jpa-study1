@@ -27,6 +27,8 @@ public class MemberService {
     private void validateDuplicateMember(Member member) {
         //EXCEPTION
         List<Member> findMembers = memberRepository.findByName(member.getName());
+        // 정말 말도 안되지만.. 동시에 누군가가 같은 이름으로 회원가입을 할 수도 있다.
+        // 최후의 방어선으로 데이터 베이스에 유니크 제약 조건을 걸어줘야 한다.
 
         if (!findMembers.isEmpty()){
             throw new IllegalStateException("이미 존재하는 회원입니다.");

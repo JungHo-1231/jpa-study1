@@ -33,6 +33,7 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status; // 주문상태 [order, cancel]
 
+
     // 연관관계 메서드 //
     public void setMember(Member member){
         this.member=member;
