@@ -51,4 +51,9 @@ public abstract class Item {
         this.stockQuantity= restStock;
     }
 
+    // 수량을 변경할 일이 있다면 셋터를 통해서
+    // 수량을 조절하는 것이 아니라
+    // 셋터를 뺀 다음 핵심 비지니스 로직을 가지고
+    // 수량을 조절해야 한다.
+
 }
