@@ -1,4 +1,4 @@
-package jpabook.jpashop.reposityory.simeplequery;
+package jpabook.jpashop.reposityory.order.simeplequery;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

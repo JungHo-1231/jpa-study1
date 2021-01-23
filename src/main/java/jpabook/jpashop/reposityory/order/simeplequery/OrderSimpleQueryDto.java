@@ -1,7 +1,6 @@
-package jpabook.jpashop.reposityory.simeplequery;
+package jpabook.jpashop.reposityory.order.simeplequery;
 
 import jpabook.jpashop.domain.Address;
-import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderStatus;
 import lombok.Data;
 
